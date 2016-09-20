@@ -1,0 +1,12 @@
+{
+	"headers": {
+		"Content-Type": "application/x-www-form-urlencoded"
+	}, 
+	"queryp": {}, 
+	"bodyp": {
+		"your_url": "{monitor}"
+	}, 
+	"method": "POST", 
+	"urlp": "http://localhost:8080/send"
+}
+
