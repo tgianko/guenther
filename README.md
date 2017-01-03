@@ -1,5 +1,7 @@
 # Guenther - a Tool to Test for Server Side Request Abuse
 
+Here is a quick tutorial on guenther. For more information, please refer to our paper http://trouge.net/gp/papers/SSR_raid2016.pdf
+
 ## Quick recap on Server Side Request
 
 Server Side Requests SSR is a communication pattern in which an intermediate server can retrieve an HTTP resource on behalf of a user. Guenther tests intermediate SSR servers to detect vulnerabilities that can be used to mount SSR-based attacks.
@@ -32,7 +34,7 @@ where 10.0.0.1 is the local IP and `monitor.foo.com` is the public IP of
 the gateway router. This example will work if there are in place port forwarding rules
 between 10.0.0.1 and `monitor.foo.com`. Both `-p` and `-l` accept IPs and hostnames.
 
-#E Example 2: Bypassing FDQN only filters
+## Example 2: Bypassing FDQN only filters
 
 Now, let's assume that the SSR service accepts messages with FDQN URLs. This can be
 discovered with the previous command plus the following command:
