@@ -64,7 +64,7 @@ $ guenther.py webapp_A.json -tI -tR -l monitor.foo.com
 As opposed to `-tRx`, `-tR` performs two tests: with and without
 HTTP redirection.
 
-# Input File Format}
+# Input File Format
 
 The input file of guenther is a JSON object stored in a file provided via command line. 
 
@@ -137,3 +137,21 @@ The below JSON object input file is the following:
 }
 ```
 
+## `raw2gnt.py`: Utility to generate input files from RAW HTTP Request
+
+ You can create JSON object input files starting from raw HTTP requests stored in a file with `utils/raw2gnt.py`:
+
+```bash
+  $ cat example/rawreq.txt | python src/utils/raw2gnt.py > GNT_file.json
+```
+
+Then, modify the json file and add the placeholder `{monitor}`. If the request needs to be sent over HTTPS, use the `-https` flag:
+
+```bash
+  $ cat example/rawreq.txt | python src/utils/raw2gnt.py -https > GNT_file.json
+```
+
+
+## Install
+
+See `requirements.txt`.
