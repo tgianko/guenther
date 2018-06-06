@@ -1,6 +1,6 @@
 # Guenther - a Tool to Test for Server Side Request Abuse
 
-Here is a quick tutorial on guenther. For more information, please refer to our paper http://trouge.net/gp/papers/SSR_raid2016.pdf
+Here is a quick tutorial on guenther. For more information, please refer to our paper http://trouge.net/papers/SSR_raid2016.pdf
 
 ## Quick recap on Server Side Request
 
